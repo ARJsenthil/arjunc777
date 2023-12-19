@@ -588,6 +588,7 @@ body
     left: 0%;
     text-align: center;
     opacity: 0;
+    transition: .5s all;
 }
 .portfolio .portfolio_box_container .portfolio_box div p
 {
@@ -595,10 +596,12 @@ body
 }
 .portfolio_box:hover img
 {
+    transition: .5s all;
     transform: scale(1.2);
 }
 .portfolio_box:hover .portfolio_box_content
 {
+    transition: .5s all;
     opacity: 1 !important;
 }
 .footer
@@ -645,6 +648,7 @@ body
     justify-content: center;
     align-items: center;
     color: white;
+    transition: .5s all;
 }
 .portfolio_box_content div
 {
@@ -652,4 +656,5 @@ body
     gap: 25px;
     justify-content: center;
     align-items: center;
+    transition: .5s all;
 }
