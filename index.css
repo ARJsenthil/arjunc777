@@ -373,7 +373,7 @@ body
 .services_box_img
 {
     transition: .5s all;
-    overflow: hidden;
+    overflow: hidden !important;
     border-radius: inherit;
 }
 .services_box:hover img
@@ -691,6 +691,7 @@ body
 {
     display: flex;
     gap: 5px;
+    flex-wrap: warp;
     justify-content: center;
     align-items: center;
 }
@@ -861,10 +862,41 @@ body
     }
     .header
     {
-        gap: 10%;
+        gap: 50px;
+    }
+    .about_4box
+    {
+        display: grid;
+        gap: 30px;
     }
     .services, .team, .portfolio,  .home
     {
         padding-top: 50px;
+    }
+    .services, .team
+    {
+        *
+        {
+            overflow: visible;
+        }
+    }
+    .team .team_box_content
+    {
+        left: 50% !important;
+    }
+    .footer
+    {
+        display: grid;
+        gap: 10px;
+        padding: 25px;
+        height: 150px;
+    }
+    .footer p
+    {
+        width: auto;
+    }
+    .footer
+    {
+        overflow: visible !important;
     }
 }
