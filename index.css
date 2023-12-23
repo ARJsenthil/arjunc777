@@ -87,6 +87,10 @@ body
 {
     display: none;
 }
+.header_menu_btn
+{
+    background-color: transparent;
+}
 .header_menu .header_menu_btn i
 {
     font-size: xx-large;
@@ -839,13 +843,6 @@ body
     .two_div
     {
         display: none;
-    }
-}
-
-@media screen and (min-width:320px) and (max-width:480px) {
-    .home img
-    {
-        width: 320px;
     }
 }
 @media screen and (min-width:320px) and (max-width:480px) {
