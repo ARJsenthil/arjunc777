@@ -229,7 +229,7 @@ body
 .about_4box div:hover
 {
     transition: all .5s;
-    top: -25px;
+    top: -30px;
     left: 0px;
     color: white;
     background-image: linear-gradient(to right bottom, rgb(2, 79, 150), rgb(0, 100, 200), rgb(7, 186, 250));
@@ -851,6 +851,13 @@ body
     {
         overflow-x: hidden;
     }
+    body
+    {
+        *
+        {
+            overflow: visible !important;
+        }
+    }
     .home .img
     {
         height: 260px;
@@ -863,6 +870,10 @@ body
     .header
     {
         gap: 50px;
+    }
+    .header_nav
+    {
+        overflow: visible !important;
     }
     .about_4box
     {
