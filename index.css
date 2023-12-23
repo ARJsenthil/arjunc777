@@ -592,7 +592,7 @@ body
 {
     width: 300px;
     height: 250px;
-    border-radius: 15px;
+    border-radius: 5px;
     box-shadow: .5px .5px 5px 5px rgb(0, 0, 0, .1);
     position: relative;
 }
@@ -601,7 +601,7 @@ body
     width: 300px;
     height: 250px;
     transition: .5s all;
-    overflow: hidden;
+    overflow: hidden !important;
 }
 .portfolio .portfolio_box_container .portfolio_box img
 {
@@ -884,7 +884,7 @@ body
     {
         padding-top: 50px;
     }
-    .services, .team
+    /* .services, .team */
     {
         *
         {
