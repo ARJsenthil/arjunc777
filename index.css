@@ -850,10 +850,14 @@ body
     {
         overflow-x: hidden;
     }
+    .home .img
+    {
+        height: 260px;
+    }
     .home img
     {
-        width: 320px;
-        height: 100px;
+        /* width: 320px; */
+        height: 200px;
     }
     .header
     {
