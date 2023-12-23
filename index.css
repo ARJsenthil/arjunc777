@@ -229,7 +229,7 @@ body
 .about_4box div:hover
 {
     transition: all .5s;
-    top: -30px;
+    top: -25px;
     left: 0px;
     color: white;
     background-image: linear-gradient(to right bottom, rgb(2, 79, 150), rgb(0, 100, 200), rgb(7, 186, 250));
