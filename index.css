@@ -848,3 +848,22 @@ body
         width: 320px;
     }
 }
+@media screen and (min-width:320px) and (max-width:480px) {
+    *
+    {
+        overflow: hidden;
+    }
+    .home img
+    {
+        width: 320px;
+        height: 100px;
+    }
+    .header
+    {
+        gap: 10%;
+    }
+    .services, .team, .portfolio,  .home
+    {
+        padding-top: 50px;
+    }
+}
