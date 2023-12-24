@@ -12,7 +12,7 @@ body
 }
 .header
 {
-    position: sticky;
+    position: sticky !important;
     top: 0%;
     padding: 15px;
     display: flex;
@@ -478,14 +478,14 @@ body
 {
     width: 330px;
     height: 270px;
-    border-radius: 15px;
+    border-radius: 5px;
     box-shadow: .5px .5px 5px 5px rgb(0, 0, 0, .1);
     position: relative;
     margin-bottom: 100px;
 }
 .team .team_box_container .team_box img
 {
-    width: 350px;
+    width: 330px;
     height: 370px;
     border-radius: inherit;
 }
@@ -495,7 +495,7 @@ body
     width: 250px;
     position: absolute;
     top: 290px;
-    left: 53.5%;
+    left: 50%;
     transform: translate(-50%, 0%);
     border-radius: 10px;
     padding: 25px 25px 25px 25px;
@@ -592,7 +592,6 @@ body
 {
     width: 300px;
     height: 250px;
-    border-radius: 5px;
     box-shadow: .5px .5px 5px 5px rgb(0, 0, 0, .1);
     position: relative;
 }
@@ -855,34 +854,234 @@ body
     {
         *
         {
-            overflow: visible !important;
+            overflow: visible ;
         }
-    }
-    .home .img
-    {
-        height: 260px;
-    }
-    .home img
-    {
-        /* width: 320px; */
-        height: 200px;
     }
     .header
     {
-        gap: 50px;
+        gap: 25%;
+
+        h1
+        {
+            font-size: x-large;
+        }
+        .header_menu i
+        {
+            font-size: x-large !important;
+        }
+        .header_nav
+        {
+            overflow: visible !important;
+        }
     }
-    .header_nav
+    
+    .home
     {
-        overflow: visible !important;
+        .img
+        {
+            height: 230px;
+        }
+        img
+        {
+            /* width: 320px; */
+            height: 200px;
+        }
+        h1
+        {
+            padding: 30px 0px 0px 0px;
+            font-size: xx-large;
+        }
+        p
+        {
+            font-size: small;
+        }
+        .getst_div
+        {
+            margin: 0%;
+        }
+        .getst
+        {
+            font-size: small;
+            padding: 8px 12px 9px 12px;
+        }
+        .watch
+        {
+            i
+            {
+                font-size: x-large;
+            }
+            span
+            {
+                font-size: medium;
+            }
+        }
     }
-    .about_4box
+    
+    .about_4box 
     {
         display: grid;
         gap: 30px;
+        padding: 25px 0px 0px 0px;
+        
+        div
+        {
+            padding: 15px;
+        }
+        div i
+        {
+            font-size: large;
+        }
+        div h3
+        {
+            font-size: medium;
+            padding: 10px 0px;
+        }
+        div p
+        {
+            font-size: small;
+            line-height: normal;
+        }
+        div:hover
+        {
+            position: static !important;
+            transform: scale(1.05);
+        }
     }
+
+    .services
+    {
+        padding: 30px 0px 70px 0px !important;
+        .services_top_content
+        {
+            h1
+            {
+                font-size: xx-large !important;                
+            }
+            p
+            {
+                padding: 10px 0px;
+                font-size: small;
+            }
+        }
+        .services_box_container
+        {
+            padding: 10px 0px 0px 0px;
+            gap: 100px !important;
+
+            .services_box
+            {
+                margin: 0%;
+            }
+            .services_box, .img, img
+            {
+                width: 270px !important;
+                height: 240px !important;
+            }
+            .services_box_content
+            {
+                width: 230px !important;
+                padding: 25px 10px 10px 10px !important;
+            }
+            h3
+            {
+                font-size: medium;
+            }
+            p
+            {
+                font-size: small;
+            }
+            i
+            {
+                font-size: large !important;
+                padding: 9px 12px !important;
+                border-width: 3px !important;
+                top: -25px !important;
+            }            
+        }
+
+    }
+
+    .team
+    {
+        padding: 30px 0px 30px 0px;
+        .team_top_content
+        {
+            h1
+            {
+                font-size: xx-large !important;                
+            }
+            p
+            {
+                padding: 10px 0px;
+                font-size: small;
+            }
+        }
+        .team_box_container
+        {
+            padding: 10px 0px 30px 0px;
+            gap: 100px !important;
+
+            .team_box
+            {
+                margin: 0%;
+            }
+            .team_box, .img, img
+            {
+                width: 270px !important;
+                height: 250px !important;
+            }
+            .team_box_content
+            {
+                top: 200px !important;
+                width: 200px !important;
+                padding: 15px 10px 10px 10px !important;
+                h3
+                {
+                    font-size: medium !important;
+                }
+                p
+                {
+                    padding: 5px 0px !important;
+                    font-size: small !important;
+                }
+                i
+                {
+                    font-size: x-small !important;
+                }
+            }
+                        
+        }
+    }
+
+    .portfolio
+    {
+        padding: 30px 0px 30px 0px;
+        .portfolio_top_content
+        {
+            h1
+            {
+                font-size: xx-large !important;                
+            }
+            p
+            {
+                padding: 10px 0px;
+                font-size: small;
+            }
+        }
+        .portfolio_box_container
+        {
+            .portfolio_box, .portfolio_box_img, img, .portfolio_box_content
+            {
+                width: 250px !important;
+                height: 200px !important;
+            }
+            
+        }
+    }
+
     .services, .team, .portfolio,  .home
     {
-        padding-top: 50px;
+        padding: 30px 0px 0px 0px;
     }
     /* .services, .team */
     {
