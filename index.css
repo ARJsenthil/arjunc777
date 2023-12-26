@@ -8,7 +8,6 @@ body
 {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     background-color: white;
-    overflow-x: hidden;
 }
 .header
 {
@@ -99,6 +98,7 @@ body
 {
     padding: 90px 0px 50px 0px; 
     text-align: center;
+    overflow: hidden;
 }
 .home a
 {
@@ -191,6 +191,7 @@ body
     flex-wrap: wrap;
     justify-content: center;
     transition: .5 all;
+    overflow: hidden;
 }
 .about_4box div
 {
@@ -239,6 +240,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .two_div .img_play
 {
@@ -330,6 +332,7 @@ body
     justify-content: center;
     align-items: center;
     padding: 90px 0px 0px 0px;
+    overflow: hidden;
 }
 .services .services_top_content
 {
@@ -443,6 +446,7 @@ body
     justify-content: center;
     align-items: center;
     padding: 90px 0px 0px 0px;
+    overflow: hidden;
 }
 .team .team_top_content
 {
@@ -522,7 +526,7 @@ body
 .team_social_media_i
 {
     display: flex;
-    gap: 5px;
+    gap: 15px;
 }
 .team_social_media_i a
 {
@@ -532,7 +536,7 @@ body
 }
 .team_social_media_i i
 {
-    padding: 7px 9px;
+    padding: 7px 10px;
     background-color: rgb(5, 113, 214);
     border-radius: 50%;
 }
@@ -557,6 +561,7 @@ body
     justify-content: center;
     align-items: center;
     padding: 90px 0px 50px 0px;
+    overflow: hidden;
 }
 .portfolio .portfolio_top_content
 {
@@ -608,7 +613,7 @@ body
     width: 300px;
     height: 250px;
 }
-.portfolio .portfolio_box_container .portfolio_box .portfolio_box_content
+.portfolio .portfolio_box_container .portfolio_box .portfolio_content_box
 {
     background-color: rgba(128, 128, 128, 0.377);
     width: 300px;
@@ -627,45 +632,35 @@ body
 {
     transform: scale(1.2);
 }
-.portfolio_box:hover .portfolio_box_content
+.portfolio_box:hover .portfolio_content_box
 {
     transition: .5s all;
     opacity: 1 !important;
 }
-.portfolio_box_content
+.portfolio_content_box
 {
-    transition: .5s all;
-    /* display: flex; */
-    gap: 50%;
-    justify-content: center;
+    transition: .5s all;    
     align-items: center;
     color: white;
     position: relative;
 }
-.portfolio_box_content div
+.portfolio_content_box .portfolio_content
 {
-    float: right;
+    display: flex;
+    gap: 35%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 80%;
+
+}
+.portfolio_content_box .portfolio_icons
+{
     display: flex;
     gap: 25px;
     justify-content: center;
     align-items: center;
     font-size: x-large;
-}
-
-.portfolio_box_content div i:nth-child(1)
-{
-    font-size: large;
-}
-.portfolio_box_content h3
-{
-    float: left;
-    font-weight: 400;
-} 
-.portfolio_box_content div, .portfolio_box_content h3
-{
-    position: relative;
-    top: 80%;
-    padding: 10px;
 }
 .footer
 {
@@ -675,6 +670,7 @@ body
     justify-content: center;
     align-items: center;
     background-color: rgba(15, 4, 32, 0.678);
+    overflow: hidden;
 }
 .footer p
 {   
@@ -791,9 +787,9 @@ body
         transition: .5s all;
         display: none;
         position: absolute;
-        top: 74px;
+        top: 65px;
         left: 0%;
-        background-color: rgba(128, 128, 128, 0.37);
+        background-color: rgba(128, 128, 128, 0.9);
         width: 100%;
     }
     .header .header_ul
@@ -809,7 +805,7 @@ body
     .header_ul a
     {
         display: block;
-        
+        color: rgba(255, 255, 255, 0.5);
     }
     .header .header_btn a
     {
@@ -846,16 +842,10 @@ body
     }
 }
 @media screen and (min-width:320px) and (max-width:480px) {
-    *
-    {
-        overflow-x: hidden;
-    }
+    
     body
     {
-        *
-        {
-            overflow: visible ;
-        }
+    
     }
     .header
     {
@@ -1019,21 +1009,23 @@ body
         .team_box_container
         {
             padding: 10px 0px 30px 0px;
-            gap: 100px !important;
+            gap: 30px !important;
 
             .team_box
             {
                 margin: 0%;
+                overflow: hidden;
             }
             .team_box, .img, img
             {
                 width: 270px !important;
-                height: 250px !important;
+                height: 300px !important;
             }
             .team_box_content
             {
-                top: 200px !important;
-                width: 200px !important;
+                top: 230px !important;
+                width: 100% !important;
+                border-radius: 0px !important;
                 padding: 15px 10px 10px 10px !important;
                 h3
                 {
@@ -1070,29 +1062,34 @@ body
         }
         .portfolio_box_container
         {
-            .portfolio_box, .portfolio_box_img, img, .portfolio_box_content
+            .portfolio_box, .portfolio_box_img, img, .portfolio_content_box
             {
-                width: 250px !important;
-                height: 200px !important;
+                width: 150px !important;
+                height: 150px !important;
             }
-            
-        }
-    }
+            .portfolio_content_box
+            {
+                .portfolio_content
+                {
+                    gap: 35px;
+                }
+                h3
+                {
+                    font-size: small;
+                    font-weight: 400;
+                }
+                .portfolio_icons
+                {
+                    gap: 10px;
 
-    .services, .team, .portfolio,  .home
-    {
-        padding: 30px 0px 0px 0px;
-    }
-    /* .services, .team */
-    {
-        *
-        {
-            overflow: visible;
+                    i
+                    {
+                        font-size: small !important;
+                        
+                    }
+                }
+            }
         }
-    }
-    .team .team_box_content
-    {
-        left: 50% !important;
     }
     .footer
     {
@@ -1100,13 +1097,10 @@ body
         gap: 10px;
         padding: 25px;
         height: 150px;
-    }
-    .footer p
-    {
-        width: auto;
-    }
-    .footer
-    {
-        overflow: visible !important;
+        
+        .footer p
+        {
+            width: auto;
+        }
     }
 }
