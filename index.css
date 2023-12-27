@@ -200,8 +200,6 @@ body
     border-radius: 10px;
     box-shadow: .5px .5px 3px 3px rgb(0, 0, 0, .1);
     position: relative;
-    top: 0;
-    left: 0;
     transition: all .5s !important;
 } 
 .about_4box div h3
@@ -259,12 +257,13 @@ body
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-0%, -50%);
-    transition: all .5s;
+    transform: translate(-50%, -50%);
+    transition: all .5s ease-in-out;
 
     &:hover
     {
         font-size: 70px;
+        transition: all .5s ease-in-out;
     }
 }
 .two_div .img_content
@@ -838,7 +837,55 @@ body
     }
     .two_div
     {
-        display: none;
+        display: block;
+    }
+    .two_div
+    {
+        padding-top: 30px;
+        .img_play
+        {
+            width: 100%;
+            height: 250px;
+
+            i
+            {
+                font-size: large;
+
+                &:hover
+                {
+                    font-size: xx-large;
+                }
+            }
+        }
+        .img_content
+        {
+            width: 100%;
+            height: auto !important;
+            
+            .img_content_div
+            {
+                padding: 5%;
+                
+                h1
+                {
+                    font-size: x-large;
+                }
+                p
+                {
+                    font-size: small;
+                }
+                a
+                {
+                    top: 0%;
+                    padding: 5px 10px 6px 10px;
+                    font-size: small;
+                }
+                i
+                {
+                    font-size: small;
+                }
+            }
+        }
     }
 }
 @media screen and (min-width:320px) and (max-width:480px) {
