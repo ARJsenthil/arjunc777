@@ -726,6 +726,20 @@ body
     {
         padding-top: 90px;
     }
+    .contact_top_content
+    {
+        text-align: center;
+        h1
+        {
+            font-weight: bold;
+            font-size: xxx-large;
+        }
+        p
+        {
+            color: rgba(255, 255, 255, 0.5);
+            margin: auto;
+        }
+    }
     .contact-bottom-container
     {
     }
