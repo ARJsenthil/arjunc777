@@ -731,7 +731,7 @@ body
     .contact-top-container h1
     {
         margin: 0%;
-        color: #37517e;
+        color: rgb(5, 113, 214);
         font-size: xx-large;
         font-weight: 900;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -742,7 +742,7 @@ body
         display: inline-block !important;
         width: 50px;
         height: 5px;
-        background-color: #47b2e4;
+        background-color: rgb(5, 113, 214);
     }
     .contact-top-container p:last-child
     {
@@ -755,8 +755,8 @@ body
     .contact .contact-main-container
     {
         /* height: 100px; */
-        border-top: 3px solid #47b2e4;
-        border-bottom: 3px solid #47b2e4;
+        border-top: 3px solid rgb(5, 113, 214);
+        border-bottom: 3px solid rgb(5, 113, 214);
         box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.1);
         padding: 25px;
     }
@@ -766,12 +766,12 @@ body
     }
     .contact .contact-main-container svg
     {
-        color: #47b2e4;
+        color: rgb(5, 113, 214);
     }
     .contact .contact-main-container .icon
     {
         padding: 9px 13px 11px 13px;
-        background-color: #47b2e444;
+        background-color: rgb(5, 113, 214);
     }
     .contact .contact-main-container .icon-box
     {
