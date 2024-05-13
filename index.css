@@ -772,8 +772,8 @@ body
     .contact .contact-main-container .icon
     {
         padding: 9px 13px 11px 13px;
-        color: white !important;
-        background-color: rgb(5, 113, 214);
+        /* color: white !important; */
+        /* background-color: rgb(5, 113, 214); */
     }
     .contact .contact-main-container .icon-box
     {
