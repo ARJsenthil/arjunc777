@@ -567,17 +567,19 @@ body
 }
 .portfolio .portfolio_top_content
 {
-    text-align: center;
+    text-align: center !important;
 }
 .portfolio .portfolio_top_content h1
 {
     font-size: xxx-large;
+    text-align: center !important;
     font-weight: 300;
 }
 .portfolio .portfolio_top_content p
 {
     padding: 15px 0px;
     width: 850px;
+    text-align: center !important;
     margin: auto;
 }
 .portfolio p
