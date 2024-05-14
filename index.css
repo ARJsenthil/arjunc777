@@ -748,17 +748,17 @@ body
     {
       display: flex;
       gap: 25px;
-      min-height: 550px !important;
-
     
     }
     .contact-bl-container
     {
-      width: 36%;
+        width: 36%;
+        min-height: 550px !important;
     }
     .contact-br-container
     {
-      width: 64%;
+        width: 64%;
+        min-height: 550px !important;
     }
     .contact .contact-main-container
     {
@@ -875,12 +875,13 @@ body
       
     .contact-bottom-container
     {
-        display: grid;
+      display: grid;
+    
+      .contact-bl-container, .contact-br-container
+      {
+        width: 100%;
         min-height: auto !important;
-        .contact-bl-container, .contact-br-container
-        {
-            width: 100%;
-        }
+      }
     }
     
     .name-email
