@@ -752,13 +752,11 @@ body
     }
     .contact-bl-container
     {
-        width: 36%;
-        min-height: 550px !important;
+      width: 36%;
     }
     .contact-br-container
     {
-        width: 64%;
-        min-height: 550px !important;
+      width: 64%;
     }
     .contact .contact-main-container
     {
@@ -769,6 +767,7 @@ body
         padding: 25px;
         display: grid;
         gap: 15px;
+        min-height: 550px !important;
     }
     .contact-main-container textarea
     {
@@ -880,7 +879,6 @@ body
       .contact-bl-container, .contact-br-container
       {
         width: 100%;
-        min-height: auto !important;
       }
     }
     
