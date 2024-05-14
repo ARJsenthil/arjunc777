@@ -767,7 +767,8 @@ body
         padding: 25px;
         display: grid;
         gap: 15px;
-        min-height: 550px !important;
+        max-height: 550px !important;
+        height: 550px !important;
     }
     .contact-main-container textarea
     {
